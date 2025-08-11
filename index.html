@@ -16,7 +16,7 @@
   <div id="result"></div>
 
   <script>
-  const FUNC_URL = "https://<mh-sentiment-func>.azurewebsites.net/api/analyze-sentiment";
+  const FUNC_URL = "https://mh-sentiment-func12345.azurewebsites.net/api/analyze-sentiment?code=YOUR_FUNCTION_KEY";
   document.getElementById('send').onclick = async () => {
     const txt = document.getElementById('text').value.trim();
     if(!txt) return alert('Enter a message');
@@ -42,5 +42,6 @@
  
 </body>
 </html>
+
 
 
